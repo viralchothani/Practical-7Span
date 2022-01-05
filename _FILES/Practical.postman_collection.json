@@ -1,0 +1,317 @@
+{
+	"info": {
+		"_postman_id": "93f2acca-ec3e-4036-8d91-cad3f171bd3a",
+		"name": "Practical",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Patel",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "patel@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8888888888",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"description": "0 = In-Active / 1 = Active",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2JlNjA0NGVlMzAzNzZmMTcyYjg0ZmE5ZTFhZWFmMmI2ZTJhMjk1YTIxOWVkMmRkMTQ4OWZkMGUwMmNiNzE0M2ViYWU3MmI4ZDk1YmRhMzQiLCJpYXQiOjE2NDE0MDMzNzAsIm5iZiI6MTY0MTQwMzM3MCwiZXhwIjoxNjcyOTM5MzcwLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.iNZKJWS87zDdgWaP4GOs0XTn8pFFlHyGnsaow3WtyX549uVD0jua-beRx-v-raFxe-mJV9lO0R0HqORWF2ZRcJ-0fggOsXT_cwrLVGXN8lrboGz9dGWfHqNfkmPGVEclt1zNzQvo9tw71dfx7Sb10oMGs0E6oIff0Xp6vBjctpuws6_Ktd7gAXfeYfblWqG84Ii7Ntue0orabFUiaAhx2b0gI2cApWxJQqUN2-iNIfqct1X6niu0MdGCC4cWmETON_OTPDvg58LdXUAJkG9jv-7EeEDLy0B8O_o6OQuFv_x0a80L41GIGDIdOIFgujsJo4HmKmOWkkxKyS30u7j15zK533-qzl3NxlJhk_2qw_ud-zwhsNvwBHll9iMAJZxS8e6NEQphkkTR3xbhvyAy7P8UkRs6UHaqIPTL6cnGSQBKpmbUtPjr9lZmVNJW--IkQFZuPznxZiTd0f0zEy3Ll7WBv9e-Q3JIT0EjHSVjsbfBWsvwpE_z2P9CKMlKW-vQyFkbMvSltKs2XP-PaJy9xfY-UTaLdncyqVAirfhF3d85YC0ZKNW-tvP-tXR-6iQdsPR3IK6vYofDRaVeL-y8ijoJUMlOvDbU2dc39srj2r8mdyY77yJooyEUkZcstihiRsU8NCPO1AEdSmeeLt_2M02T5uR9XHal11Gz2TVthIo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chothani",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "1111111111",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"description": "0 = In-Active / 1 = Active",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "viral@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User List from Hobby",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hobby_id",
+							"value": "1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getuser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Hobby",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2JlNjA0NGVlMzAzNzZmMTcyYjg0ZmE5ZTFhZWFmMmI2ZTJhMjk1YTIxOWVkMmRkMTQ4OWZkMGUwMmNiNzE0M2ViYWU3MmI4ZDk1YmRhMzQiLCJpYXQiOjE2NDE0MDMzNzAsIm5iZiI6MTY0MTQwMzM3MCwiZXhwIjoxNjcyOTM5MzcwLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.iNZKJWS87zDdgWaP4GOs0XTn8pFFlHyGnsaow3WtyX549uVD0jua-beRx-v-raFxe-mJV9lO0R0HqORWF2ZRcJ-0fggOsXT_cwrLVGXN8lrboGz9dGWfHqNfkmPGVEclt1zNzQvo9tw71dfx7Sb10oMGs0E6oIff0Xp6vBjctpuws6_Ktd7gAXfeYfblWqG84Ii7Ntue0orabFUiaAhx2b0gI2cApWxJQqUN2-iNIfqct1X6niu0MdGCC4cWmETON_OTPDvg58LdXUAJkG9jv-7EeEDLy0B8O_o6OQuFv_x0a80L41GIGDIdOIFgujsJo4HmKmOWkkxKyS30u7j15zK533-qzl3NxlJhk_2qw_ud-zwhsNvwBHll9iMAJZxS8e6NEQphkkTR3xbhvyAy7P8UkRs6UHaqIPTL6cnGSQBKpmbUtPjr9lZmVNJW--IkQFZuPznxZiTd0f0zEy3Ll7WBv9e-Q3JIT0EjHSVjsbfBWsvwpE_z2P9CKMlKW-vQyFkbMvSltKs2XP-PaJy9xfY-UTaLdncyqVAirfhF3d85YC0ZKNW-tvP-tXR-6iQdsPR3IK6vYofDRaVeL-y8ijoJUMlOvDbU2dc39srj2r8mdyY77yJooyEUkZcstihiRsU8NCPO1AEdSmeeLt_2M02T5uR9XHal11Gz2TVthIo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hobby_id",
+							"value": "1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/hobby",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"hobby"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Hobby",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2JlNjA0NGVlMzAzNzZmMTcyYjg0ZmE5ZTFhZWFmMmI2ZTJhMjk1YTIxOWVkMmRkMTQ4OWZkMGUwMmNiNzE0M2ViYWU3MmI4ZDk1YmRhMzQiLCJpYXQiOjE2NDE0MDMzNzAsIm5iZiI6MTY0MTQwMzM3MCwiZXhwIjoxNjcyOTM5MzcwLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.iNZKJWS87zDdgWaP4GOs0XTn8pFFlHyGnsaow3WtyX549uVD0jua-beRx-v-raFxe-mJV9lO0R0HqORWF2ZRcJ-0fggOsXT_cwrLVGXN8lrboGz9dGWfHqNfkmPGVEclt1zNzQvo9tw71dfx7Sb10oMGs0E6oIff0Xp6vBjctpuws6_Ktd7gAXfeYfblWqG84Ii7Ntue0orabFUiaAhx2b0gI2cApWxJQqUN2-iNIfqct1X6niu0MdGCC4cWmETON_OTPDvg58LdXUAJkG9jv-7EeEDLy0B8O_o6OQuFv_x0a80L41GIGDIdOIFgujsJo4HmKmOWkkxKyS30u7j15zK533-qzl3NxlJhk_2qw_ud-zwhsNvwBHll9iMAJZxS8e6NEQphkkTR3xbhvyAy7P8UkRs6UHaqIPTL6cnGSQBKpmbUtPjr9lZmVNJW--IkQFZuPznxZiTd0f0zEy3Ll7WBv9e-Q3JIT0EjHSVjsbfBWsvwpE_z2P9CKMlKW-vQyFkbMvSltKs2XP-PaJy9xfY-UTaLdncyqVAirfhF3d85YC0ZKNW-tvP-tXR-6iQdsPR3IK6vYofDRaVeL-y8ijoJUMlOvDbU2dc39srj2r8mdyY77yJooyEUkZcstihiRsU8NCPO1AEdSmeeLt_2M02T5uR9XHal11Gz2TVthIo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/hobby",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"hobby"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Hobby",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTg0ZGM4NmVlMTI4NGU2OTU2YjM3NTQ5YzFmODBmZTZiNTM1ZGExNjczNjA1Y2IxMmJjOWNjZTZlYTgxMWJhZjMyYmI1ZjVmNTIxZjEyMjMiLCJpYXQiOjE2NDEzOTE1NDYsIm5iZiI6MTY0MTM5MTU0NiwiZXhwIjoxNjcyOTI3NTQ2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.JZWRr99kotbXCIl_-ldM9vmLLwEMoQkhejxligF8dXc-_TP2JOTjA8C6z8vspdt8L7SOx3knBxZpl6myLxhnvaQM4559OTiheJxXlbJ48UTJlNJui6UFLrnICfNyyW6gZkyvMzEnveVd_KjsneHirvgJmlF6wEQAGsnmCLfFFTaIKpWI3jHCFBnAeDHJJ4a6NZ1vWODZWoYKj0a5z78id0LBDIVTGHxiRlPS89OWeZtEMIXWxaB8IxokDNJBvg9k2OAgMcsiZGLjiXR6ruMzV_yNw7oYQ0ZbxFmur-gmvvb4YfSMfYDCcM8ZmOcldRrNcQ8AnPOr6TWunx8x3eup_LlwazFh0ehYaznThP2o-6SZQ78mwPmN7XsmcKDxMJTyviqSj8DKK8dI14h3bmofmW6dFbKWsH4iFc9mnoALPDND-g7L4Zl7yOrs7qM_CjY6AyufZXrSraYlRnU91TKS84tsZcWhNeVbcjjLl518oXHAsU-nNC4THRRKL-0OT6i3cwXWB9CtTjRGccg3CnBG7phs1yhbCcZDAcR5-9mBXJNMx8Mqb8aaPTI-jPnGgF5U4QYID7dlLvoTiz0sUKARrmaEzBDZI2JJKdkiyB2R0lBGgUJYbEi6L_SXOFEiACCsWuTP8mSascrEKqFEr2Cl4IiDAirrSO4sZb6j2F609wU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/hobby/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"hobby",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
